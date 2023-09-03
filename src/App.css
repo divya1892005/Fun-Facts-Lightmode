@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: aqua;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+}
+
+.circle {
+  width: 1300px;
+  height: 1300px;
+  border-radius: 100%;
+  background-color: rgb(146, 255, 255);
+  margin-left: 200px;
+  margin-top: -320px;
+}
+
+.container {
+  width: 700px;
+  height: 580px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 3px solid white;
+  border-radius: 20px;
+}
+
+.header-div {
+  position: relative;
+}
+
+.header {
+  width: auto;
+  height: 90px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  z-index: 3;
+}
+
+.react-logo {
+  width: 40px;
+  height: 40px;
+  margin-left: 20px;
+  margin-right: 10px;
+}
+
+.logo-text {
+  color: rgb(0, 217, 255);
+  font-size: 30px;
+}
+
+.MainComponent--container {
+  width: auto;
+  height: 490px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  z-index: 1;
+}
+
+.funFacts-heading {
+  padding-top: 80px;
+  padding-left: 60px;
+  font-size: 37px;
+}
+
+.funFacts-list {
+  margin-left: 100px;
+  margin-top: 30px;
+}
+
+.funFacts-list > li {
+  line-height: 1.5;
+  font-size: 17px;
+}
+
+.funFacts-list > li::marker {
+  color: rgb(0, 217, 255);
+  font-size: 25px;
+}
+
+.react-bgimg {
+  width: 150px;
+  height: auto;
+  margin-top: -200px;
+  margin-left: 550px;
+}
+
+.light {
+  padding-top: 5px;
+  padding-left: 255px;
+  padding-right: 10px;
+  font-weight: 800;
+}
+
+.dark {
+  padding-top: 5px;
+  margin-right: 70px;
+  font-weight: 800;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  height: 23px;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  top: 4px;
+  left: 6px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider:before {
+  background-color: black;
+}
+
+input:checked + .slider {
+  background-color: white;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(18px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
